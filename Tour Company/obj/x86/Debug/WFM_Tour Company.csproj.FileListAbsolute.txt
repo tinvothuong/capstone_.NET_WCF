@@ -1,0 +1,50 @@
+E:\capstone2-document\Tour Company\bin\Debug\Tour Company.exe.config
+E:\capstone2-document\Tour Company\bin\Debug\Tour Company.exe
+E:\capstone2-document\Tour Company\bin\Debug\Tour Company.pdb
+E:\capstone2-document\Tour Company\bin\Debug\Microsoft.mshtml.dll
+E:\capstone2-document\Tour Company\bin\Debug\WinFormHtmlEditor.dll
+E:\capstone2-document\Tour Company\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmQL_Tour.resources
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmTrangChu.resources
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.Properties.Resources.resources
+E:\capstone2-document\Tour Company\obj\x86\Debug\ResGen.read.1.tlog
+E:\capstone2-document\Tour Company\obj\x86\Debug\ResGen.write.1.tlog
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour Company.exe
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour Company.pdb
+D:\Project\capstone2-document\Tour Company\bin\Debug\Tour Company.exe.config
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour Company.exe
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour Company.pdb
+D:\Project\capstone2-document\Tour Company\bin\Debug\Tour Company.exe
+D:\Project\capstone2-document\Tour Company\bin\Debug\Tour Company.pdb
+D:\Project\capstone2-document\Tour Company\bin\Debug\Microsoft.mshtml.dll
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmQL_Tour.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmTrangChu.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.Properties.Resources.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\WFM_Tour Company.csproj.GenerateResource.Cache
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmDangNhap.resources
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmQL_TaiKhoan.resources
+E:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmDoiMatKhau.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\WFM_Tour Company.csprojResolveAssemblyReference.cache
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmDangNhap.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmDoiMatKhau.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmQL_TaiKhoan.resources
+D:\Project\capstone2-document\Tour Company\bin\Debug\WinFormHtmlEditor.xml
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmCustomer.resources
+D:\Project\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmThongKe.resources
+D:\capstone2-document\Tour Company\bin\Debug\Tour Company.exe.config
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour Company.exe
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour Company.pdb
+D:\capstone2-document\Tour Company\bin\Debug\Tour Company.exe
+D:\capstone2-document\Tour Company\bin\Debug\Tour Company.pdb
+D:\capstone2-document\Tour Company\bin\Debug\Microsoft.mshtml.dll
+D:\capstone2-document\Tour Company\bin\Debug\WinFormHtmlEditor.xml
+D:\capstone2-document\Tour Company\obj\x86\Debug\WFM_Tour Company.csprojResolveAssemblyReference.cache
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmCustomer.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmDangNhap.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmDoiMatKhau.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmQL_TaiKhoan.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmQL_Tour.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmThongKe.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.frmTrangChu.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\Tour_Company.Properties.Resources.resources
+D:\capstone2-document\Tour Company\obj\x86\Debug\WFM_Tour Company.csproj.GenerateResource.Cache

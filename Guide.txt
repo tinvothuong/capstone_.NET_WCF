@@ -1,0 +1,15 @@
+Account access
+- Web (Full role): 
+user name: thuongtin
+pass: 123123 (0r "123456") 
+(username and pass endcode ==> no insert database form SQL server)
+
+- Winfrom 
+user name: vietnamtour (0r "tuoitretour")
+pass: 123123
+
+
+
+Email: thuongtinc1@gmail.com
+Skype: tinvt.qng
+Copyright @ O3T Team - D18CMUTPM

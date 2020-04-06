@@ -1,0 +1,16 @@
+E:\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.dll
+E:\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.pdb
+E:\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\ResolveAssemblyReference.cache
+E:\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.dll
+E:\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.pdb
+D:\Project\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.dll
+D:\Project\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.pdb
+D:\Project\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.dll
+D:\Project\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.pdb
+D:\Project\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.csprojResolveAssemblyReference.cache
+D:\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.dll
+D:\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.pdb
+D:\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.csprojResolveAssemblyReference.cache
+D:\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.dll
+D:\capstone2-document\Service\WCF_ExpressTravel\obj\Debug\WCF_ExpressTravel.pdb
+D:\capstone2-document\Service\WCF_ExpressTravel\bin\WCF_ExpressTravel.dll.config

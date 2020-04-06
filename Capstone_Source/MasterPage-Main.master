@@ -1,0 +1,307 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage-Main.master.cs"
+    Inherits="MasterPage_Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>..::Express Travel::.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="CSS/stylesMain.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="Scripts/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="Scripts/Javascrip.js"></script>
+    <script type="text/javascript" src="Scripts/js1.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.color.js"></script>
+    <script type="text/javascript" src="Scripts/script.js"></script>
+    <script type="text/javascript" src="Scripts/jquerycapSlide.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-1.3.2.js"></script>
+    <!---script menu doc--->
+    <script type="text/javascript" src='Scripts/js2.js'></script>
+    <script type='text/javascript' src="Scripts/menu_jquery.js"></script>
+    <script type="text/javascript">
+        function slideSwitch() {
+            var $active = $('#slideshow IMG.active');
+            if ($active.length == 0) $active = $('#slideshow IMG:last');
+            var $next = $active.next().length ? $active.next()
+                        : $('#slideshow IMG:first');
+            $active.addClass('last-active');
+            $next.css({ opacity: 0.0 })
+                    .addClass('active')
+                    .animate({ opacity: 1.0 }, 1000, function () {
+                        $active.removeClass('active last-active');
+                    });
+        }
+        $(function () {
+            setInterval("slideSwitch()", 5000);
+        });
+
+    </script>
+    <!--Slide News--->
+    <script type="text/javascript" src="Scripts/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.9.0.custom.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-tabs-rotate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#featured").tabs({ fx: { opacity: "toggle"} }).tabs("rotate", 5000, true);
+        });
+    </script>
+    <!--End Head-->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--Begin Content-->
+    <div id="content">
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    &nbsp;&nbsp;&nbsp; <a href="#">Express Travel</a></h1>
+            </div>
+            <!--Menu-->
+            <div class="xmenu">
+                <ul id="xmenu">
+                    <li id="nl"></li>
+                    <li><a class="hm" href="UI_HomePage.aspx" title="Express Travel" style="margin-top: -29px;">
+                        Tin du lịch </a><a class="nm" href="#" title="Express Travel">..::Trang chủ::. </a>
+                    </li>
+                    <li><a class="hm" href="UI_Tour.aspx" title="Tour Travel" style="margin-top: -29px;">-Tour du lịch-</a>
+                        <a class="nm" href="UI_Tour.aspx" title="Tour Travel">-Tour du lịch-</a></li>
+                    <li><a class="hm" href="UI_Contact.aspx" title="Contact" style="margin-top: -29px;">-Liên hệ-</a>
+                        <a class="nm" href="UI_Contact.aspx" title="Contact">-Liên hệ-</a></li>
+                    <li><a class="hm" href="UI_Introduction.aspx" title="About as" style="margin-top: -29px;">-Giới thiệu-</a>
+                        <a class="nm" href="UI_Introduction.aspx" title="About as">-Giới thiệu-</a></li>
+                    <li><a class="hm" href="UI_Terms.aspx" title="Register" style="margin-top: -29px;">-Đăng ký-</a>
+                        <a class="nm" href="UI_Terms.aspx" title="Register">-Đăng ký-</a></li>
+                    <!--
+                   <li><a class="hm" href="#" title="xxx" style="margin-top: -29px; ">xxx</a>
+                   <a class="nm" href="#" title="xxx">xxx</a></li>
+                   -->
+                    <!--
+                   <li class="last"><a class="hm" href="#" title=" zzzzzệ " rel="nofollow" style="margin-top: -29px; ">  -zzzzz-  </a>
+                   <a class="nm" href="#" title="  zzzz  " rel="nofollow">   -zzzz-  </a></li>
+                    -->
+                    <li style="padding-top: 3px"></li>
+                </ul>
+            </div>
+            <!--End menu->
+	        <!--Banner slide show-->
+            <div>
+                <div id="slideshow">
+                    <img src="Banner/hl.gif" alt="Slideshow Image 1" />
+                    <img src="Banner/BannerTravel.jpg" alt="Slideshow Image 2" class="active" />
+                    <img src="Banner/hl.gif" alt="Slideshow Image 3" />
+                    <img src="Banner/hp.jpg" alt="Slideshow Image 4" />
+                    <img src="Banner/cau rong.jpg" alt="Slideshow Image 5" />
+                    <img src="Banner/viet nam timeless.jpg" alt="Slideshow Image 6" />
+                </div>
+            </div>
+            <!--end Banner slide show-->
+        </div>
+        <!-- header ends -->
+        <!-- Main begins -->
+        <div id="main">
+            <!-- DIV Left begin -->
+            <div id="left">
+                <!--Category-->
+                <div style="box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)">
+                    <div class="left_title">
+                        Tin Du lịch
+                    </div>
+                    <div class="left_content">
+                        <div id="menu11">
+                            <asp:DataList ID="dtlCategory" runat="server" Width="100%">
+                                <ItemTemplate>
+                                    <ul>
+                                        <li style="list-style: none;"><a href="UI_Category.aspx?category=<%#Eval("IDCategory") %>"
+                                            title='<%#Eval("NameCategory") %>'>
+                                            <%#Eval("NameCategory")%></a></li>
+                                    </ul>
+                                </ItemTemplate>
+                            </asp:DataList>
+                        </div>
+                    </div>
+                </div>
+                <!--Enb Category-->
+                <!--Tour-Dia diem -->
+                <div style="box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)">
+                    <div class="left_title">
+                        Tour Du lịch
+                    </div>
+                    <div class="left_content">
+                        <div id="menu11">
+                            <ul>
+                                <li style="list-style: none;"><a href="UI_Tour.aspx" title='Tất cả'>Tất cả Tour</a></li>
+                            </ul>
+                            <asp:DataList ID="dtlTourZone" runat="server" Width="100%">
+                                <ItemTemplate>
+                                    <ul>
+                                        <li style="list-style: none;"><a href="UI_TourZone.aspx?zone=<%#Eval("IDZone") %>"
+                                            title='<%#Eval("ZoneName") %>'><%#Eval("ZoneName") %></a></li>
+                                    </ul>
+                                </ItemTemplate>
+                            </asp:DataList>
+                        </div>
+                    </div>
+                </div>
+                <!--Enb Dia diem Tour-->
+            </div>
+            <!-- END DIV Left -->
+            <!-- Main content MID Noi dung chinh trong nay-->
+            <div id="mid-main">
+                <!-- Chữ chạy-->
+                <div>
+                    <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="left" scrolldelay="2"
+                        scrollamount="2">
+		                <em><h4>.::Vietnam timeless charm - Việt Nam vẻ đẹp bất tận ::.</h4></em></marquee>
+                </div>
+                <!-- End chữ chạy-->
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- end Main content MID -->
+            <!-- Div RIGHT -->
+            <div id="right">
+                <!--Search Tour--->
+               <%-- <div style="box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)">
+                    <div class="right_title">
+                        &nbsp;&nbsp;&nbsp; Tìm kiếm</div>
+                    <div class="right_content">
+                        Noi dung tim
+                        <br />
+                        trong nay
+                    </div>
+                </div>--%>
+                <!--End Search Tour--->
+                <!--Tour Moi nhat--->
+                <div style="box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)">
+                    <!--Bong vien--->
+                    <div class="right_title">
+                        &nbsp;&nbsp;&nbsp; Hot Tour</div>
+                    <div class="right_content">
+                    <div style="padding-left:14px">
+                    <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" scrolldelay="2"
+                            scrollamount="2" height="250px">   
+                            <asp:DataList ID="dtlTourHot" runat="server">
+                                <ItemTemplate>  <div>                             
+                                <div class="grid-block slide" style="margin: 1px; border-style: dashed; border-color: #129643;
+                            border-width: 1px">
+                            <div class="caption">
+                            <a href="UI_TourDetail.aspx?tour=<%#Eval("IDTour") %>" >
+                                <h3>
+                                    <span style="color:Yellow">
+                                    <%#Eval("NameTour")%>
+                                    </span>
+                                    <p style="width: 190px">
+                                        <div>Ngày đi:<//div>
+                                        <div style="float: right">
+                                            <%#DataBinder.Eval(Container.DataItem, "[DepartDate]", "{0:dd/MM/yyyy}")%>
+                                            </div>
+                                        <div>Khởi hành từ:<//div>
+                                        <div style="float: right">
+                                            <%#Eval("DepartPosition")%>
+                                            </div>
+                                        <div>Thời gian:<//div>
+                                        <div style="float: right">
+                                            <%#Eval("Duration") %>
+                                           </div>
+                                        <div>Phương tiện:<//div>
+                                        <div style="float: right">
+                                            <%#Eval("TransMethod") %>
+                                            </div>
+                                            <div>Giá:<//div>
+                                        <div style="float: right; color:Yellow">
+                                            <%#DataBinder.Eval(Container.DataItem, "PriceTour", "{0:#,###.##}")%>
+                                            &nbsp;VNĐ</div>
+                                    </p>
+                                </h3>
+                                </a>
+                            </div>
+                        <img src="<%#Eval("ImageTour") %>" width="180px" height="180px" alt=""/>
+                        <div style="color:#129643; text-align:center"><h3><%#Eval("NameTour")%></h3></div>
+                        <div style="color:red">
+                        <h3>
+                        <%#DataBinder.Eval(Container.DataItem, "PriceTour", "{0:#,###.##}")%>
+                         &nbsp;VNĐ</h3></div>
+                        </div></div> 
+                             </ItemTemplate>
+                         </asp:DataList>  
+                    </marquee>
+                    </div>
+                    </div>
+                </div>
+                <!--End new Tour--->
+                <!--Logo Tour Company--->
+                <div style="box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)">
+                    <!--Bong vien--->
+                    <div class="right_title">
+                        &nbsp;&nbsp;&nbsp; Đối tác</div>
+                    <div class="right_content">
+                        <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" scrolldelay="2"
+                            scrollamount="1" height="200px">                    
+                            &nbsp;<a href="#">&nbsp;<img width="100%" height="100%" alt="" src ="ImagesTourCompany/dtan.gif" /></a>            
+                            &nbsp;<a href="#">&nbsp;<img width="100%" height="100%" alt="" src ="ImagesTourCompany/logo asiaworld.jpg" /></a>
+                            <a href="#">&nbsp;<img width="100%" height="100%" alt="" src ="ImagesTourCompany/Victory_tour.jpg" /></a>
+                        </marquee>
+                    </div>
+                </div>
+                <!--End Logo company--->
+                <!--Dem truy cap--->
+                <div style="box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1)">
+                    <!--Bong vien--->
+                    <div class="right_title">
+                        &nbsp;&nbsp;&nbsp; Lượng truy cập</div>
+                    <div class="right_content">
+                        <a href="http://info.flagcounter.com/WDV7">&nbsp;&nbsp;&nbsp;<img src="http://s05.flagcounter.com/count/WDV7/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/"
+                            alt="Flag Counter" border="0"></a>
+                    </div>
+                </div>
+                <!--End dem truy cap--->
+            </div>
+            <!---Div cua class right-->
+            <!--END DIV RIGHT -->
+            <div id="footer">
+                <p>
+                    Copyright © 2014</p>
+                <p>
+                    Design by O3T Group</p>
+                <p>
+                    K7/25 Quang Trung St, Hai Chau, Da Nang city</p>
+            </div>
+        </div>
+        <!-- Main end -->
+    </div>
+    <!--End Content-->
+        <!---------- JS ---------->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.standard').hover(
+		function () {
+		    $(this).find('.caption').show();
+
+
+		},
+		function () {
+		    $(this).find('.caption').hide();
+		}
+	);
+            $('.fade').hover(
+		function () {
+		    $(this).find('.caption').fadeIn(250);
+		},
+		function () {
+		    $(this).find('.caption').fadeOut(250);
+		}
+	);
+            $('.slide').hover(
+		function () {
+		    $(this).find('.caption').slideDown(250);
+		},
+		function () {
+		    $(this).find('.caption').slideUp(250);
+		}
+	);
+        });
+    </script>
+    </form>
+</body>
+</html>
